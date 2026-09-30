@@ -1,0 +1,30 @@
+{
+  "enabledPlugins": {
+    "expo@claude-plugins-official": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm test:*)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx expo lint:*)",
+      "Bash(npx expo start:*)",
+      "Bash(npx supabase start)",
+      "Bash(npx supabase migration new:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git checkout -b:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run typecheck)",
+      "Bash(npx expo install:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(npx supabase db push:*)",
+      "Bash(eas submit:*)",
+      "Bash(git push --force:*)"
+    ]
+  }
+}
